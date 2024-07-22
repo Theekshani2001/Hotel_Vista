@@ -1,0 +1,59 @@
+
+<!--  <div class="outer">-->
+<!--    <h2>-->
+<!--      Login-->
+<!--    </h2>-->
+<!--    <br>-->
+
+<!--    <hr>-->
+<!--    <br>-->
+<!--    <br>-->
+
+<!--    <div class="mb-3">-->
+<!--      <label for="emailAddress" class="form-label">Email address</label>&nbsp;&nbsp; &nbsp;-->
+<!--      <input formControl="email" type="email" class="form-control" id="emailAddress" placeholder="name@example.com">-->
+<!--      <br>-->
+<!--      <br>-->
+<!--      <br>-->
+<!--      <br>-->
+<!--    </div>-->
+<!--    <div class="mb-3">-->
+<!--      <label for="password" class="form-label">Password</label>&nbsp;&nbsp; &nbsp;-->
+<!--      <input  type="password" class="form-control" id="password" >-->
+<!--      <br>-->
+<!--      <br>-->
+<!--      <br>-->
+<!--      <br>-->
+<!--    </div>-->
+<!--    <div class="mb-3">-->
+<!--      <input routerLink="/dashboard"  type="submit" class="btn btn-primary" value="login" style="width: 100%; height: 30px;background: #6190E8;  /* fallback for old browsers */background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <router-outlet></router-outlet>-->
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+
+  <div class="outer">
+    <h3>
+      Login
+    </h3>
+    <hr>
+    <div class="mb-3">
+      <label for="emailAddress" class="form-label">Email address</label>
+      <input formControlName="email" type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="password" >
+    </div>
+    <div class="mb-3">
+      <input  type="submit" class="btn btn-primary" value="login" style="width: 100%">
+    </div>
+
+  </div>
+
+
+</form>
+
+
+

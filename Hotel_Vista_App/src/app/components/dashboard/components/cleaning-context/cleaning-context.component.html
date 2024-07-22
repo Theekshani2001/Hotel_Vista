@@ -1,0 +1,29 @@
+<router-outlet></router-outlet>
+<div class="outer">
+  <h1 class="header-text">Room Cleaning Management</h1>
+  <hr>
+  <mat-tab-group>
+    <mat-tab label="Save Room Cleaning Service">
+      <div class="content-wrap">
+        <app-add-cleaning-service></app-add-cleaning-service>
+      </div>
+    </mat-tab>
+    <mat-tab label="Update Room Cleaning Service">
+      <div class="content-wrap">
+        <app-update-cleaning-service></app-update-cleaning-service>
+      </div>
+    </mat-tab>
+    <mat-tab label="Delete Room Cleaning Service">
+      <div class="content-wrap">
+        <app-delete-cleaning-service></app-delete-cleaning-service>
+      </div>
+    </mat-tab>
+    <mat-tab label="See All Room Cleaning Services">
+      <div class="content-wrap">
+        <app-list-cleaning-service></app-list-cleaning-service>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>
+

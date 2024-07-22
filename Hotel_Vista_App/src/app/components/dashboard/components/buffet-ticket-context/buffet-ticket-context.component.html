@@ -1,0 +1,29 @@
+<router-outlet></router-outlet>
+<div class="outer">
+  <h1 class="header-text">Buffet Ticket Management</h1>
+  <hr>
+  <mat-tab-group>
+    <mat-tab label="Save Buffet Ticket">
+      <div class="content-wrap">
+        <app-add-buffet-ticket></app-add-buffet-ticket>
+      </div>
+    </mat-tab>
+    <mat-tab label="Update Buffet Ticket">
+      <div class="content-wrap">
+        <app-update-buffet-ticket></app-update-buffet-ticket>
+      </div>
+    </mat-tab>
+    <mat-tab label="Delete Buffet Ticket">
+      <div class="content-wrap">
+        <app-delete-buffet-ticket></app-delete-buffet-ticket>
+      </div>
+    </mat-tab>
+    <mat-tab label="See All Buffet Tickets">
+      <div class="content-wrap">
+        <app-list-buffet-ticket></app-list-buffet-ticket>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>
+

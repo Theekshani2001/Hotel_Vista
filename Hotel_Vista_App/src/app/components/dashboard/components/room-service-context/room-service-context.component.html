@@ -1,0 +1,28 @@
+<router-outlet></router-outlet>
+<div class="outer">
+  <h1 class="header-text">Room Service Management</h1>
+  <hr>
+  <mat-tab-group>
+    <mat-tab label="Save Room Service">
+      <div class="content-wrap">
+        <app-add-room-service></app-add-room-service>
+      </div>
+    </mat-tab>
+    <mat-tab label="Update Room Service">
+      <div class="content-wrap">
+        <app-update-room-service></app-update-room-service>
+      </div>
+    </mat-tab>
+    <mat-tab label="Delete Room Service">
+      <div class="content-wrap">
+        <app-delete-room-service></app-delete-room-service>
+      </div>
+    </mat-tab>
+    <mat-tab label="See All Room Service">
+      <div class="content-wrap">
+        <app-list-room-service></app-list-room-service>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

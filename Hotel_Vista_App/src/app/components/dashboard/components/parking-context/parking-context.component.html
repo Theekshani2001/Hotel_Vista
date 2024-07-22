@@ -1,0 +1,28 @@
+<router-outlet></router-outlet>
+<div class="outer">
+  <h1 class="header-text">Parking Management</h1>
+  <hr>
+  <mat-tab-group>
+    <mat-tab label="Save Parking Details">
+      <div class="content-wrap">
+        <app-add-parking></app-add-parking>
+      </div>
+    </mat-tab>
+    <mat-tab label="Update Parking Details">
+      <div class="content-wrap">
+        <app-update-parking></app-update-parking>
+      </div>
+    </mat-tab>
+    <mat-tab label="Delete Parking Details">
+      <div class="content-wrap">
+        <app-delete-parking></app-delete-parking>
+      </div>
+    </mat-tab>
+    <mat-tab label="See All Parking Details">
+      <div class="content-wrap">
+        <app-list-parking></app-list-parking>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

@@ -1,0 +1,28 @@
+<router-outlet></router-outlet>
+<div class="outer">
+  <h1 class="header-text">Payroll Management</h1>
+  <hr>
+  <mat-tab-group>
+    <mat-tab label="Save Employee Payroll">
+      <div class="content-wrap">
+        <app-add-payroll></app-add-payroll>
+      </div>
+    </mat-tab>
+    <mat-tab label="Update Employee Payroll">
+      <div class="content-wrap">
+        <app-update-payroll></app-update-payroll>
+      </div>
+    </mat-tab>
+    <mat-tab label="Delete Employee Payroll">
+      <div class="content-wrap">
+        <app-delete-payroll></app-delete-payroll>
+      </div>
+    </mat-tab>
+    <mat-tab label="See All Employee Payrolls">
+      <div class="content-wrap">
+        <app-list-payroll></app-list-payroll>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>
